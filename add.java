@@ -4,10 +4,10 @@ class add
  public static void main(String args[])
   {
     Scanner myobj = new Scanner(System.in);
-    System.out.println("enter first number:");
+    System.out.println("enter 1st number:");
     int firstnumber;
     firstnumber=myobj.nextInt();
-    System.out.println("enter second number:");
+    System.out.println("enter 2nd number:");
     int secondnumber;
     secondnumber=myobj.nextInt();
     System.out.println("Firstnumber:"+firstnumber);
