@@ -1,16 +1,19 @@
-﻿import java.util.Scanner;
-class add
-{
- public static void main(String args[])
-  {
-    Scanner myobj = new Scanner(System.in);
-    System.out.println("enter 1st number:");
-    int firstnumber;
-    firstnumber=myobj.nextInt();
-    System.out.println("enter 2nd number:");
-    int secondnumber;
-    secondnumber=myobj.nextInt();
-    System.out.println("Firstnumber:"+firstnumber);
-    System.out.println("Secondnumber:"+secondnumber);
-  }
+xclass Student{
+String name;
+int age;
+
+Student(String name, int age){
+    this.name = name;
+    this.age = age;
+    System.out.println(this.name);
+}
+Student(Student student){
+    this.name = student.name;
+    this.age = student.age;
+    System.out.println(this.name);
+}
+public static void main (String args[]){
+    Student student1 = new Student("arshad",20);
+    Student student2 = new Student(student1);
+}
 }
